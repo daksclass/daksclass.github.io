@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daks' Class</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="header" class=small>
+    <h1 id="page_title">Daks' Java Class</h1>
+    <div id = "wrapper">
+
+      <span class = headerItem> <a href="daks_weekly.html">    <h2 >Schedule</h2>	</a> </span>
+      <span class = headerItem>  <a href="daks_today.html">    <h2 >Today</h2>	</a></span>
+      <span class = headerItem>  <a href="daks_help.html">    <h2 >Help me!</h2></a>	</span>
+      <span class = headerItem> <a href="daks_about.html">    <h2 >About Daks</h2>	</a></span>
+
+    </div>
+
+  </div>
+
+
+	<div id="space">
+	</div>
+
+
+	<div id="weeklySchedule">
+		<h1 id="general_title">Goals for the Day</h1>
+
+
+		<div id="wrapper">
+			<p>Learn everyone's name</p>
+
+
+			<p>Get comfy with Eclipse and Java syntax</p>
+
+
+			<p>Get a program running with input and output</p>
+
+
+			<p>Fill out daily survey</p>
+		</div>
+
+
+		<h1 id="general_title">Daily Schedule 6/13/16</h1>
+
+
+		<div id="scheduleWrapper">
+			<table>
+				<tr>
+					<td id="time">8:00 AM</td>
+
+					<td id="activity">Checkin Starts</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">8:00 AM - 9:00 AM</td>
+
+					<td id="activity">Icebreakers</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">9:30 AM - 10:00 AM</td>
+
+					<td id="activity">
+						<label class="collapse" for="_1">Hello World!</label> <input id="_1"
+						type="checkbox">
+
+						<div id="details">
+							<ul>
+								<li>Make sure you have a main method.</li>
+
+
+								<li>Put your code inside the curly brackets for the main method. Only
+								this code will run!</li>
+
+
+								<li>Check your parenthesis, quotes, curly brackets and semi colon.</li>
+
+
+								<li>Run!</li>
+
+
+								<li>Get creative with your printing. Add another line! Print a joke! Go
+								nuts! XD</li>
+							</ul>
+							<code style="display:block;white-space:pre-wrap">
+public class PrintStuff{
+
+  public static void main(String[] args){
+    System.out.println("Hello World!");
+  }
+
+}
+</code>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">10:00 AM - 12:00 PM</td>
+
+					<td id="activity">
+						<label class="collapse" for="_2">Printing and Variables</label>
+						<input id="_2" type="checkbox">
+
+						<div id="details">
+							<ul>
+								<li>Lets get fancy. Variables are like containers to store
+								information.</li>
+
+
+								<li>To create a variable, first you need to say what type of
+								information you are storing. A container to store water is way
+								different than a container to store pencils, right? Variables to store
+								<b>Strings</b> and <b>ints</b> are different too!</li>
+
+
+								<li>Next, name your variable. This is like labeling your container, so
+								you can find it and use it later. Name it something that makes sense,
+								so it's easy to remember.</li>
+
+
+								<li>Check your parenthesis, quotes, curly brackets and semi colon.</li>
+
+
+								<li>Run!</li>
+							</ul>
+							<code style="display:block;white-space:pre-wrap">
+public class PrintStuff{
+
+  public static void main(String[] args){
+
+    String name = "Daks";
+    int numberYears = 2;
+
+    System.out.println("My name is " + name + "and I've worked at iD tech for " + numberYears + " years!");
+
+  }
+
+}
+</code>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">12:00 PM - 1:00 PM</td>
+
+					<td id="activity">Lunch</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">1:00 PM - 2:00 PM</td>
+
+					<td id="activity">
+						<label class="collapse" for="_3">Input</label> <input id="_3" type=
+						"checkbox">
+
+						<div id="details">
+							<ul>
+								<li>Just printing stuff is boring. Let's make this interactive!</li>
+
+
+								<li>First, import Scanner. Scanner is a tool we use to process input
+								from a user into something that our java program knows how to use.</li>
+
+
+								<li>After you import Scanner, you need to create an instance. Importing
+								scanner is basically like accessing a factory of tools, creating an
+								instance is using that factory to make your very own scanner that you
+								can use!</li>
+
+
+								<li>Creating an instance isn't too bad, it's a lot like creating a new
+								variable. First tell it it's type. It's type is Scanner. Then name it.
+								I usually stick with something clear, like input. Then you put in some
+								code that just sells it that's it's a new Scanner, looking for code
+								going into the program from the user. Tada!</li>
+
+
+								<li>Once we have a Scanner, we can ask a question and then use out
+								Scanner, which we named input, to process the answer and save it in a
+								variable.</li>
+
+
+								<li>The Scanner needs to know what data type it's looking for. Is it an
+								int? A string?</li>
+							</ul>
+							<code style="display:block;white-space:pre-wrap">import
+							java.util.Scanner; public class ScanStuff{ public static void
+							main(String[] args){ Scanner input = new Scanner(System.in);
+							System.out.print("What... is your name?"); String answerName =
+							input.nextLine(); System.out.print("What... is your quest?"); String
+							answerQuest = input.nextLine(); System.out.print("What... is the
+							airspeed velocity of an unladen swallow?"); int answerVelocity=
+							input.nextInt(); } }</code>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">2:00 PM - 3:00 PM</td>
+
+					<td id="activity">Afternoon activity</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">3:00 PM - 3:30 PM</td>
+
+					<td id="activity">Practicing Concepts</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">3:30 PM - 4:00 PM</td>
+
+					<td id="activity">Wrap up</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div id="space">
+		</div>
+
+
+		<footer>
+			<p>Made by Daks. For my peeps at iD tech DU, summer 2016. Rock on.</p>
+		</footer>
+	</div>
+</body>
+</html>
