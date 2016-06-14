@@ -29,20 +29,20 @@
 
 
 		<div id="wrapper">
-			<p>Learn everyone's name</p>
+			<p>Have fun and get to know each other better</p>
 
 
-			<p>Get comfy with Eclipse and Java syntax</p>
+			<p>Practice new concepts from yesterday</p>
 
 
-			<p>Get a program running with input and output</p>
-
+			<p>Learn Loops and Methods</p>
+			<p>Start thinking about the final project</p>
 
 			<p>Fill out daily survey</p>
 		</div>
 
 
-		<h1 id="general_title">Daily Schedule 6/13/16</h1>
+		<h1 id="general_title">Daily Schedule 6/14/16</h1>
 
 
 		<div id="scheduleWrapper">
@@ -57,41 +57,52 @@
 				<tr>
 					<td id="time">8:00 AM - 9:00 AM</td>
 
-					<td id="activity">Icebreakers</td>
+					<td id="activity">Lab Time</td>
 				</tr>
 
 
 				<tr>
-					<td id="time">9:30 AM - 10:00 AM</td>
+					<td id="time">9:00 AM - 9:40 PM</td>
 
 					<td id="activity">
-						<label class="collapse" for="_1">Hello World!</label> <input id="_1"
+						<label class="collapse" for="_1">Let's get loopy Part I</label> <input id="_1"
 						type="checkbox">
 
 						<div id="details">
 							<ul>
-								<li>Make sure you have a main method.</li>
-
-
-								<li>Put your code inside the curly brackets for the main method. Only
-								this code will run!</li>
-
-
-								<li>Check your parenthesis, quotes, curly brackets and semi colon.</li>
-
-
-								<li>Run!</li>
-
-
-								<li>Get creative with your printing. Add another line! Print a joke! Go
-								nuts! XD</li>
+								<li>Computers are all about repetition. They make mundane stuff easy
+									for us! Loops are a great way to make a computer do a repetative task.</li>
+									<li>A while loop is a lot like an if statement, it checks a condition, and if it's true, it runs!
+									The big difference if that it doesn't stop running, it just goes and goes until the condition is no longer true.</li>
 							</ul>
 							<code style="display:block;white-space:pre-wrap">
-public class PrintStuff{
+import java.util.Random;
+import java.util.Scanner;
 
-  public static void main(String[] args){
-    System.out.println("Hello World!");
-  }
+public class Loopy {
+
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	Random gen = new Random();
+
+	int keepGoing = 1;
+
+	while(keepGoing == 1){
+		System.out.println("Keep going?");
+		String answer = input.nextLine();
+		if(answer.equalsIgnoreCase("yes")){
+			System.out.println("Yay!");
+		}
+		else if(answer.equalsIgnoreCase("no")){
+			System.out.println("Ok.");
+			keepGoing = 0;
+		}
+		else{
+			System.out.println("Lets keep going!");
+		}
+	}
+
+}
 
 }
 </code>
@@ -99,120 +110,62 @@ public class PrintStuff{
 					</td>
 				</tr>
 
-
 				<tr>
-					<td id="time">10:00 AM - 12:00 PM</td>
+					<td id="time">10:00 AM - 11:00 AM</td>
 
 					<td id="activity">
-						<label class="collapse" for="_2">Printing and Variables</label>
-						<input id="_2" type="checkbox">
+						<label class="collapse" for="_2">Let's get loopy Part II</label> <input id="_2"
+						type="checkbox">
 
 						<div id="details">
 							<ul>
-								<li>Lets get fancy. Variables are like containers to store
-								information.</li>
-
-
-								<li>To create a variable, first you need to say what type of
-								information you are storing. A container to store water is way
-								different than a container to store pencils, right? Variables to store
-								<b>Strings</b> and <b>ints</b> are different too!</li>
-
-
-								<li>Next, name your variable. This is like labeling your container, so
-								you can find it and use it later. Name it something that makes sense,
-								so it's easy to remember.</li>
-
-
-								<li>Check your parenthesis, quotes, curly brackets and semi colon.</li>
-
-
-								<li>Run!</li>
+								<li>If you know how many times you want something to run, use a for loop instead of a while loop.
 							</ul>
 							<code style="display:block;white-space:pre-wrap">
-public class PrintStuff{
+public class ForLoopy {
 
-  public static void main(String[] args){
+public static void main(String[] args) {
 
-    String name = "Daks";
-    int numberYears = 2;
+	for(int i = 99; i >0; i --){
+		System.out.println(i + "bottles of rootbeer on the wall, ");
+		System.out.println(i + "bottles of rootbeer, ");
+		System.out.println("Take one down and pass it around,");
+		System.out.println((i-1) + "bottles of rootbeer on the wall. ");
+	}
 
-    System.out.println("My name is " + name + "and I've worked at iD tech for " + numberYears + " years!");
-
-  }
+}
 
 }
 </code>
-						</div>
-					</td>
-				</tr>
+</div>
+</td>
+</tr>
+
+
 
 
 				<tr>
-					<td id="time">12:00 PM - 1:00 PM</td>
+					<td id="time">11:15 PM - 12:00 PM</td>
 
 					<td id="activity">Lunch</td>
 				</tr>
 
+				<tr>
+					<td id="time">12:00 PM - 1:00 PM</td>
+
+					<td id="activity">Methods</td>
+				</tr>
 
 				<tr>
-					<td id="time">1:00 PM - 2:00 PM</td>
+					<td id="time">1:00 PM - 1:20 PM</td>
 
-					<td id="activity">
-						<label class="collapse" for="_3">Input</label> <input id="_3" type=
-						"checkbox">
+					<td id="activity">J-Chilling</td>
+				</tr>
 
-						<div id="details">
-							<ul>
-								<li>Just printing stuff is boring. Let's make this interactive!</li>
+				<tr>
+					<td id="time">1:20 PM - 2:00 PM</td>
 
-
-								<li>First, import Scanner. Scanner is a tool we use to process input
-								from a user into something that our java program knows how to use.</li>
-
-
-								<li>After you import Scanner, you need to create an instance. Importing
-								scanner is basically like accessing a factory of tools, creating an
-								instance is using that factory to make your very own scanner that you
-								can use!</li>
-
-
-								<li>Creating an instance isn't too bad, it's a lot like creating a new
-								variable. First tell it it's type. It's type is Scanner. Then name it.
-								I usually stick with something clear, like input. Then you put in some
-								code that just sells it that's it's a new Scanner, looking for code
-								going into the program from the user. Tada!</li>
-
-
-								<li>Once we have a Scanner, we can ask a question and then use out
-								Scanner, which we named input, to process the answer and save it in a
-								variable.</li>
-
-
-								<li>The Scanner needs to know what data type it's looking for. Is it an
-								int? A string?</li>
-							</ul>
-							<code style="display:block;white-space:pre-wrap">
-import java.util.Scanner;
-
-public class ScanStuff{
-
-public static void main(String[] args){
-
-	Scanner input = new Scanner(System.in);
-	System.out.print("What... is your name?");
-	String answerName = input.nextLine();
-	System.out.print("What... is your quest?");
-	String answerQuest = input.nextLine();
-	System.out.print("What... is the airspeed velocity of an unladen swallow?");
-	int answerVelocity = input.nextInt();
-
-}
-
-}
-							</code>
-						</div>
-					</td>
+					<td id="activity">Processing Demo</td>
 				</tr>
 
 
@@ -224,14 +177,14 @@ public static void main(String[] args){
 
 
 				<tr>
-					<td id="time">3:00 PM - 3:30 PM</td>
+					<td id="time">3:00 PM - 4:00 PM</td>
 
-					<td id="activity">Practicing Concepts</td>
+					<td id="activity">Exploration</td>
 				</tr>
 
 
 				<tr>
-					<td id="time">3:30 PM - 4:00 PM</td>
+					<td id="time">4:00PM - 4:30 PM</td>
 
 					<td id="activity">Wrap up</td>
 				</tr>
