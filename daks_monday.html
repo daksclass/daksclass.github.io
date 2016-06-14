@@ -197,22 +197,20 @@ import java.util.Scanner;
 
 public class ScanStuff{
 
-	public static void main(String[] args){
+public static void main(String[] args){
 
-		Scanner input = new Scanner(System.in);
-
-		System.out.print("What... is your name?");
-		String answerName = input.nextLine();
-
-		System.out.print("What... is your quest?");
-		String answerQuest = input.nextLine();
-		
-		System.out.print("What... is the airspeed velocity of an unladen swallow?");
-		int answerVelocity = input.nextInt();
-	}
+	Scanner input = new Scanner(System.in);
+	System.out.print("What... is your name?");
+	String answerName = input.nextLine();
+	System.out.print("What... is your quest?");
+	String answerQuest = input.nextLine();
+	System.out.print("What... is the airspeed velocity of an unladen swallow?");
+	int answerVelocity = input.nextInt();
 
 }
-</code>
+
+}
+							</code>
 						</div>
 					</td>
 				</tr>
@@ -228,8 +226,66 @@ public class ScanStuff{
 				<tr>
 					<td id="time">3:00 PM - 3:30 PM</td>
 
-					<td id="activity">Practicing Concepts</td>
-				</tr>
+					<td id="activity">
+						<label class="collapse" for="_4">Random</label> <input id="_4" type=
+					"checkbox">
+
+					<div id="details">
+						<ul>
+							<li>Generating random numbers can be super useful if you want to create
+								an interactive program or a game. Think rock-paper-scissors or a magic eight ball.</li>
+
+
+							<li>First, import Random, just like you imported Scanner. Random allows
+								you to create generators for random numbers.</li>
+
+
+							<li>After you import Random, you need to create an instance. Importing
+							Random is basically like accessing a factory of tools, creating an
+							instance is using that factory to make your very own Random generator that you
+							can use!(Just like Scanner)</li>
+
+
+							<li>Creating an instance isn't too bad, it's a lot like creating a new
+							variable. First tell it it's type. It's type is Random. Then name it.
+							I usually stick with something clear, like gen (short for generator). Then you put in some
+							code that just tells it that's it's a new Random.</li>
+
+
+							<li>Once we have a Random generator, we can use it to generate ints (and doubles, which we'll go over soon)
+						</li>
+
+
+
+						</ul>
+						<code style="display:block;white-space:pre-wrap">
+import java.util.Random;
+
+public class RandomStuff{
+
+	public static void main(String[] args){
+
+		Random gen = new Random();
+		int randomInt = gen.nextInt();
+		System.out.print(randomInt);
+
+		//if you want a number between 1 & 10
+
+		randomInt = gen.nextInt(10)+1;
+		System.out.print(randomInt);
+
+		//We add a 1, because computer
+		//scientists start counting at 0,
+		//so gen.nextInt(10) generated 0-9.
+
+	}
+
+}
+						</code>
+					</div>
+				</td>
+			</tr>
+
 
 
 				<tr>
