@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daks' Class</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="header" class=small>
+    <h1 id="page_title">Daks' Java Class</h1>
+    <div id = "wrapper">
+
+			<span class = headerItem> <a href="daks_weekly.html">    <h2 >Schedule</h2>	</a> </span>
+			<span class = headerItem>  <a href="daks_today.html">    <h2 >Today</h2>	</a></span>
+			<span class = headerItem>  <a href="daks_help.html">    <h2 >Help me!</h2></a>	</span>
+			<span class = headerItem> <a href="daks_about.html">    <h2 >About Daks</h2>	</a></span>
+			<span class = headerItem> <a href="daks_qa.html">    <h2 >Q&A</h2>	</a></span>
+
+    </div>
+
+  </div>
+
+
+	<div id="space">
+	</div>
+
+
+	<div id="weeklySchedule">
+		<h1 id="general_title">Goals for the Day</h1>
+
+
+		<div id="wrapper">
+			<p>Armagettron Tournament?</p>
+
+
+			<p>Practice concepts from yesterday</p>
+
+
+			<p>Figure out final project</p>
+
+			<p>Fill out daily survey</p>
+		</div>
+
+
+		<h1 id="general_title">Daily Schedule 6/14/16</h1>
+
+
+		<div id="scheduleWrapper">
+			<table>
+				<tr>
+					<td id="time">8:00 AM</td>
+
+					<td id="activity">Checkin Starts</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">8:00 AM - 9:00 AM</td>
+
+					<td id="activity">Lab Time</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">9:00 AM - 9:40 PM</td>
+
+					<td id="activity">
+						<label class="collapse" for="_1">Let's get loopy Part I</label> <input id="_1"
+						type="checkbox">
+
+						<div id="details">
+							<ul>
+								<li>Computers are all about repetition. They make mundane stuff easy
+									for us! Loops are a great way to make a computer do a repetative task.</li>
+									<li>A while loop is a lot like an if statement, it checks a condition, and if it's true, it runs!
+									The big difference if that it doesn't stop running, it just goes and goes until the condition is no longer true.</li>
+							</ul>
+							<code style="display:block;white-space:pre-wrap">
+import java.util.Random;
+import java.util.Scanner;
+
+public class Loopy {
+
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	Random gen = new Random();
+
+	int keepGoing = 1;
+
+	while(keepGoing == 1){
+		System.out.println("Keep going?");
+		String answer = input.nextLine();
+		if(answer.equalsIgnoreCase("yes")){
+			System.out.println("Yay!");
+		}
+		else if(answer.equalsIgnoreCase("no")){
+			System.out.println("Ok.");
+			keepGoing = 0;
+		}
+		else{
+			System.out.println("Lets keep going!");
+		}
+	}
+
+}
+
+}
+</code>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td id="time">10:00 AM - 11:00 AM</td>
+
+					<td id="activity">
+						<label class="collapse" for="_2">Let's get loopy Part II</label> <input id="_2"
+						type="checkbox">
+
+						<div id="details">
+							<ul>
+								<li>If you know how many times you want something to run, use a for loop instead of a while loop.
+							</ul>
+							<code style="display:block;white-space:pre-wrap">
+public class ForLoopy {
+
+public static void main(String[] args) {
+
+	for(int i = 99; i >0; i --){
+		System.out.println(i + "bottles of rootbeer on the wall, ");
+		System.out.println(i + "bottles of rootbeer, ");
+		System.out.println("Take one down and pass it around,");
+		System.out.println((i-1) + "bottles of rootbeer on the wall. ");
+	}
+
+}
+
+}
+</code>
+</div>
+</td>
+</tr>
+
+
+
+
+				<tr>
+					<td id="time">11:15 PM - 12:00 PM</td>
+
+					<td id="activity">Lunch</td>
+				</tr>
+
+				<tr>
+					<td id="time">12:00 PM - 1:00 PM</td>
+
+					<td id="activity">Methods</td>
+				</tr>
+
+				<tr>
+					<td id="time">1:00 PM - 1:20 PM</td>
+
+					<td id="activity">J-Chilling</td>
+				</tr>
+
+				<tr>
+					<td id="time">1:20 PM - 2:00 PM</td>
+
+					<td id="activity">Processing Demo</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">2:00 PM - 3:00 PM</td>
+
+					<td id="activity">Afternoon activity</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">3:00 PM - 4:00 PM</td>
+
+					<td id="activity">Exploration</td>
+				</tr>
+
+
+				<tr>
+					<td id="time">4:00PM - 4:30 PM</td>
+
+					<td id="activity">Wrap up</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div id="space">
+		</div>
+
+
+		<footer>
+			<p>Made by Daks. For my peeps at iD tech DU, summer 2016. Rock on.</p>
+		</footer>
+	</div>
+</body>
+</html>

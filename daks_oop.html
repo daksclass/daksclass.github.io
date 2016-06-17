@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daks' Class</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="header" class=small>
+    <h1 id="page_title">Daks' Java Class</h1>
+    <div id = "wrapper">
+
+			<span class = headerItem> <a href="daks_weekly.html">    <h2 >Schedule</h2>	</a> </span>
+			<span class = headerItem>  <a href="daks_today.html">    <h2 >Today</h2>	</a></span>
+			<span class = headerItem>  <a href="daks_help.html">    <h2 >Help me!</h2></a>	</span>
+			<span class = headerItem> <a href="daks_about.html">    <h2 >About Daks</h2>	</a></span>
+			<span class = headerItem> <a href="daks_qa.html">    <h2 >Q&A</h2>	</a></span>
+
+    </div>
+
+  </div>
+
+
+	<div id="space">
+	</div>
+
+
+	<div id="weeklySchedule">
+		<h1 id="general_title">OOP</h1>
+		<code style="display:block;white-space:pre-wrap">
+
+
+	Ball test;
+	Ball test2;
+	  void setup() {
+	    size(400,400);
+	    test = new Ball(5, 50, 50);
+	    test2 = new Ball(3, 70, 300);
+	}
+
+	void draw(){
+	  test.display();
+	  test2.display();
+	}
+
+	public class Ball{
+	int x, y, speedY, speedX, r,g,b, diameter;
+
+	public Ball(int speedY, int xIn, int yIn){
+	  this.x = xIn;
+	  this.y = yIn;
+	  this.speedY = speedY;
+	  this.speedX = 0;
+	  this.r = 255;
+	  this.g = 25;
+	  this.b = 62;
+	  this.diameter = 50;
+	}
+
+	void display(){
+	  fill(r,g,b);
+		ellipse(x, y, diameter, diameter);
+	}
+
+	}
+
+
+
+
+</code>
+		</div>
+
+
+		<div id="space">
+		</div>
+
+
+		<footer>
+			<p>Made by Daks. For my peeps at iD tech DU, summer 2016. Rock on.</p>
+		</footer>
+	</div>
+</body>
+</html>
