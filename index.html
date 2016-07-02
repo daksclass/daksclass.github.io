@@ -6,49 +6,45 @@
 </head>
 
 <body>
+	<h1 id="general_title">Daks' Class</h1>
 
-	<code style="display:block;white-space:pre-wrap">
+	<div id="me">
+		<p>Hey guys. Glad you stopped by. Missing you already, thank you so much for the great week! I'm going to try and put everything you need in here, but always feel free to get back in touch with iD tech for project backups or to get in touch.</p>
 
-
-Ball test;
-Ball test2;
-	void setup() {
-		size(400,400);
-		test = new Ball(5, 50, 50);
-		test2 = new Ball(3, 70, 300);
-}
-
-void draw(){
-	test.display();
-	test2.display();
-}
-
-public class Ball{
-int x, y, speedY, speedX, r,g,b, diameter;
-
-public Ball(int speedY, int xIn, int yIn){
-	this.x = xIn;
-	this.y = yIn;
-	this.speedY = speedY;
-	this.speedX = 0;
-	this.r = 255;
-	this.g = 25;
-	this.b = 62;
-	this.diameter = 50;
-}
-
-void display(){
-	fill(r,g,b);
-	ellipse(x, y, diameter, diameter);
-}
-
-}
-
-
-
-
-</code>
 	</div>
+
+	<h1 id="general_title">Proclipsing</h1>
+
+	<div id="me">
+
+		<p> Here's how to install Proclipsing, aka Processing with Eclipse. The code lives here: <a href="https://github.com/ybakos/proclipsing"> https://github.com/ybakos/proclipsing</a>.
+
+		<ol>
+			<li>Just above Github's file list, there are several tabs. Go to Releases.
+	<li>Go to current_releases and download the archive type of your choice (zip or tar.gz)
+		<li>Extract the archive someplace easy to get to.
+		<li>In Eclipse, go to Help > Install Additional Software, and click the Add button.
+		<li>Enter a name (probably "Proclipsing" but it's not super-important), then click the Local button next to the name field.
+		<li>Find the folder you extracted the archive to and select it. Proceed with installation.
+
+	</div>
+
+	<h1 id="general_title">Processing</h1>
+
+	<div id="me">
+
+		<p> Here's how to install Processing outside of Eclipse. We didn't use it a ton, but it's an easy option if Proclipsing is too much of a pain. <a href="https://processing.org/download/"> https://processing.org/download/</a>.
+
+		<ol>
+			<li>Just download Processing. It's super easy.
+	<li>Copy and paste your code into a new Processing sketch. Take out imports and the outermost class that Eclipse auto adds. Keep all variables, setup(), draw() and any other functions you wrote.
+		<li>If you have added images or music, import them into your data folder in Processing.
+
+	</div>
+
+
+
+
 
 		<footer>
 			<p>Made by Daks. For my peeps at iD tech DU, summer 2016. Rock on.</p>
